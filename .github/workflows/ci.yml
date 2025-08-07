@@ -1,0 +1,54 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout code from repository
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Set up Python
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.8
+
+      # Install dependencies
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r python-data-engg-app/requirements.txt
+
+      # Run flake8 linter
+      - name: Run flake8 linter
+        run: |
+          pip install flake8
+          flake8 . --max-line-length=79
+
+      # Run Unit Tests
+      - name: Run Unit Tests
+        run: |
+          pytest python-data-engg-app/tests/test_unit.py
+
+      # Run Integration Tests
+      - name: Run Integration Tests
+        run: |
+          pytest python-data-engg-app/tests/test_integration.py
+
+      # Optional: Upload test results as artifacts
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results
+          path: test-results/
