@@ -1,0 +1,27 @@
+2025-08-07 22:57:39,098 [INFO] Config file reading!
+2025-08-07 22:57:39,102 [INFO] config/config.yml: Valid yml data.
+2025-08-07 22:57:39,103 [INFO] Config loaded: input_dir=data/input, output_dir=data/output, mapping_file=data/mappings/mapping.yml, template_file=template/dbt-profile-template.txt
+2025-08-07 22:57:39,107 [INFO] config/config.yml: Valid YML data loaded.
+2025-08-07 22:57:39,110 [INFO] data/mappings/mapping.yml: Valid YML data loaded.
+2025-08-07 22:57:39,112 [INFO] template/dbt-profile-template.txt: Template file loaded.
+2025-08-07 22:57:39,112 [INFO] data/input\Backpacker-Connect.json: Valid JSON data loaded.
+2025-08-07 22:57:39,112 [INFO] render_mappings to intermediate file is started!
+2025-08-07 22:57:39,112 [WARNING] Key 'brand_summary' not found in mapped data.
+2025-08-07 22:57:39,114 [INFO] render_mappings to the variable is success!
+2025-08-07 22:57:39,114 [INFO] render_mappings to the file data/input\Backpacker-Connect.json is success!
+2025-08-07 22:57:39,123 [INFO] config/config.yml: Valid YML data loaded.
+2025-08-07 22:57:39,126 [INFO] data/mappings/mapping.yml: Valid YML data loaded.
+2025-08-07 22:57:39,127 [INFO] template/dbt-profile-template.txt: Template file loaded.
+2025-08-07 22:57:39,127 [INFO] data/input\LastMinute-Deals.json: Valid JSON data loaded.
+2025-08-07 22:57:39,127 [INFO] render_mappings to intermediate file is started!
+2025-08-07 22:57:39,127 [WARNING] Key 'brand_summary' not found in mapped data.
+2025-08-07 22:57:39,129 [INFO] render_mappings to the variable is success!
+2025-08-07 22:57:39,129 [INFO] render_mappings to the file data/input\LastMinute-Deals.json is success!
+2025-08-07 22:57:39,134 [INFO] config/config.yml: Valid YML data loaded.
+2025-08-07 22:57:39,137 [INFO] data/mappings/mapping.yml: Valid YML data loaded.
+2025-08-07 22:57:39,138 [INFO] template/dbt-profile-template.txt: Template file loaded.
+2025-08-07 22:57:39,139 [INFO] data/input\Luxury-Stays.json: Valid JSON data loaded.
+2025-08-07 22:57:39,140 [INFO] render_mappings to intermediate file is started!
+2025-08-07 22:57:39,140 [WARNING] Key 'brand_summary' not found in mapped data.
+2025-08-07 22:57:39,142 [INFO] render_mappings to the variable is success!
+2025-08-07 22:57:39,142 [INFO] render_mappings to the file data/input\Luxury-Stays.json is success!

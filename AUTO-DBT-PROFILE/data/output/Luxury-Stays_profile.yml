@@ -1,0 +1,31 @@
+name: "Default project name"
+version: "1.0.0"
+config-version: 2
+profile: "Default project name"
+model-paths:
+  - models
+analysis-paths:
+  - analysis
+test-paths:
+  - tests
+data-paths:
+  - data
+macro-paths:
+  - macros
+target-path: target
+clean-targets:
+  - target
+  - dbt_modules
+models:
+  Default project name:
+    snowplow_unified:
+      enabled: true
+      vars:
+        app_id:
+          - luxury_web
+        start_date: '2023-06-01'
+        enable_web: true
+        enable_mobile: false
+        max_session_days: 10
+        lookback_window_hours: 3
+

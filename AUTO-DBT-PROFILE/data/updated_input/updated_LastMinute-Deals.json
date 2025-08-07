@@ -1,0 +1,16 @@
+{
+  "project_name": "LastMinute Deals",
+  "unknown": {
+    "brand_summary": "Lightning deals lasting 1-2 hours. High concurrent user volume during deal drops. Need real-time tracking of inventory and bookings. Heavy mobile app usage during commute hours."
+  },
+  "app_id": [
+    "lastminute_web",
+    "lastminute_ios",
+    "lastminute_android"
+  ],
+  "start_date": "2024-01-01",
+  "enable_web": true,
+  "enable_mobile": true,
+  "max_session_days": 10,
+  "lookback_window_hours": 3
+}
