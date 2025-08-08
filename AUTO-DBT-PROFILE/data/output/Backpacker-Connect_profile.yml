@@ -1,0 +1,33 @@
+name: "Backpacker Connect"
+version: "1.0.0"
+config-version: 2
+profile: "Backpacker Connect"
+model-paths:
+  - models
+analysis-paths:
+  - analysis
+test-paths:
+  - tests
+data-paths:
+  - data
+macro-paths:
+  - macros
+target-path: target
+clean-targets:
+  - target
+  - dbt_modules
+models:
+  Backpacker Connect:
+    snowplow_unified:
+      enabled: true
+      vars:
+        app_id:
+          - backpacker_web
+          - backpacker_ios
+          - backpacker_android
+        start_date: '2023-01-01'
+        enable_web: true
+        enable_mobile: true
+        max_session_days: 10
+        lookback_window_hours: 3
+

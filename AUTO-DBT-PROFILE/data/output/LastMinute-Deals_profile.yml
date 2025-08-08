@@ -1,0 +1,33 @@
+name: "LastMinute Deals"
+version: "1.0.0"
+config-version: 2
+profile: "LastMinute Deals"
+model-paths:
+  - models
+analysis-paths:
+  - analysis
+test-paths:
+  - tests
+data-paths:
+  - data
+macro-paths:
+  - macros
+target-path: target
+clean-targets:
+  - target
+  - dbt_modules
+models:
+  LastMinute Deals:
+    snowplow_unified:
+      enabled: true
+      vars:
+        app_id:
+          - lastminute_web
+          - lastminute_ios
+          - lastminute_android
+        start_date: '2024-01-01'
+        enable_web: true
+        enable_mobile: true
+        max_session_days: 10
+        lookback_window_hours: 3
+

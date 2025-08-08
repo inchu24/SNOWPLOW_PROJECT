@@ -1,0 +1,13 @@
+{
+  "unknown": {
+    "brand_summary": "Users spend hours researching luxury properties. High-value bookings need perfect attribution. Complex booking flow with many steps."
+  },
+  "app_id": [
+    "luxury_web"
+  ],
+  "start_date": "2023-06-01",
+  "enable_web": true,
+  "enable_mobile": false,
+  "max_session_days": 10,
+  "lookback_window_hours": 3
+}

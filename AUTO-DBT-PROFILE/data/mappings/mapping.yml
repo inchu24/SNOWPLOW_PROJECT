@@ -1,0 +1,7 @@
+brand_name: project_name
+historical_data_since: start_date
+web_tracking: enable_web
+mobile_tracking: enable_mobile
+snowplow__max_session_days: max_session_days
+snowplow__lookback_window_hours: lookback_window_hours
+app_ids: app_id
