@@ -38,7 +38,7 @@ jobs:
       # Run Unit Tests
       - name: Run Unit Tests
         run: |
-          pytest AUTO-DBT-PROFILE/test/test_unit.py
+          pytest AUTO-DBT-PROFILE/test/test_mapping_renderer.py
 
       # Optional: Upload test results as artifacts
       - name: Upload test results
