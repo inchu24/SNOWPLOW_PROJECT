@@ -1,0 +1,3 @@
+auto-dbt-profile/__pycache__/
+utils/__pycache__/
+test/__pycache__/
