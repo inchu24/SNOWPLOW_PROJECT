@@ -34,7 +34,7 @@ Running the Python script is straightforward since it has no database connection
 4. Run the script  
    `python solution.py`
 
-5. Sample input JSON files are provided in `AUTO-DBT-PROFILE\data\input` with each JSON separated. Outputs are in `AUTO-DBT-PROFILE\data\output`.
+5. Sample input JSON files are provided in `AUTO-DBT-PROFILE\data\input` with each provided JSON separated. Outputs are in `AUTO-DBT-PROFILE\data\output`.
 
 6. Sample logs are available in the `AUTO-DBT-PROFILE\log` folder. Check logs for any issues.
 
@@ -45,5 +45,6 @@ Unit tests are included and can be run using pytest.
 9. Linter `flake8` is used to enforce PEP-8 Python coding standards.
 
 10. A simple CI/CD workflow is included (`.github\workflows\ci.yml`) to run tests and lint checks before merging to the `main` branch.
+
 
 
