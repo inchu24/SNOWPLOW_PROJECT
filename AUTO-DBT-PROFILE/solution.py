@@ -3,6 +3,7 @@ import json
 import yaml
 import logging
 from utils.mapper import TemplateProcessor
+from utils.dbt_project import DBTProjectGenerator
 
 config_file = "config/config.yml"
 log_dir = 'log'
@@ -56,12 +57,14 @@ def main():
         output_dir = dict_config_data.get("output_dir")
         mapping_file = dict_config_data.get("mapping_file")
         template_file = dict_config_data.get("template_file")
+        final_dir = dict_config_data.get("final_dir")
 
         logging.info(
             f"Config loaded: input_dir={input_dir}, "
             f"output_dir={output_dir}, "
             f"mapping_file={mapping_file}, "
-            f"template_file={template_file}"
+            f"template_file={template_file}, "
+            f"final_dir={final_dir}"
         )
 
         # Reading input JSON files
@@ -83,8 +86,12 @@ def main():
             logging.info(
                 f"render_mappings to the file {file_path} is success!"
             )
-            processor.create_dbt_profile()
+            profile_final_file = processor.create_dbt_profile()
 
+            dbt_structure = DBTProjectGenerator(profile_final_file, final_dir)
+            logging.info("Creating the final DBT project!")
+            dbt_structure.create_project()
+            logging.info("Created the final DBT project successfully!")
     except Exception as e:
         logging.info(f"Last exception block in the main: {e}")
 

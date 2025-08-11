@@ -1,27 +1,45 @@
-2025-08-07 22:57:39,098 [INFO] Config file reading!
-2025-08-07 22:57:39,102 [INFO] config/config.yml: Valid yml data.
-2025-08-07 22:57:39,103 [INFO] Config loaded: input_dir=data/input, output_dir=data/output, mapping_file=data/mappings/mapping.yml, template_file=template/dbt-profile-template.txt
-2025-08-07 22:57:39,107 [INFO] config/config.yml: Valid YML data loaded.
-2025-08-07 22:57:39,110 [INFO] data/mappings/mapping.yml: Valid YML data loaded.
-2025-08-07 22:57:39,112 [INFO] template/dbt-profile-template.txt: Template file loaded.
-2025-08-07 22:57:39,112 [INFO] data/input\Backpacker-Connect.json: Valid JSON data loaded.
-2025-08-07 22:57:39,112 [INFO] render_mappings to intermediate file is started!
-2025-08-07 22:57:39,112 [WARNING] Key 'brand_summary' not found in mapped data.
-2025-08-07 22:57:39,114 [INFO] render_mappings to the variable is success!
-2025-08-07 22:57:39,114 [INFO] render_mappings to the file data/input\Backpacker-Connect.json is success!
-2025-08-07 22:57:39,123 [INFO] config/config.yml: Valid YML data loaded.
-2025-08-07 22:57:39,126 [INFO] data/mappings/mapping.yml: Valid YML data loaded.
-2025-08-07 22:57:39,127 [INFO] template/dbt-profile-template.txt: Template file loaded.
-2025-08-07 22:57:39,127 [INFO] data/input\LastMinute-Deals.json: Valid JSON data loaded.
-2025-08-07 22:57:39,127 [INFO] render_mappings to intermediate file is started!
-2025-08-07 22:57:39,127 [WARNING] Key 'brand_summary' not found in mapped data.
-2025-08-07 22:57:39,129 [INFO] render_mappings to the variable is success!
-2025-08-07 22:57:39,129 [INFO] render_mappings to the file data/input\LastMinute-Deals.json is success!
-2025-08-07 22:57:39,134 [INFO] config/config.yml: Valid YML data loaded.
-2025-08-07 22:57:39,137 [INFO] data/mappings/mapping.yml: Valid YML data loaded.
-2025-08-07 22:57:39,138 [INFO] template/dbt-profile-template.txt: Template file loaded.
-2025-08-07 22:57:39,139 [INFO] data/input\Luxury-Stays.json: Valid JSON data loaded.
-2025-08-07 22:57:39,140 [INFO] render_mappings to intermediate file is started!
-2025-08-07 22:57:39,140 [WARNING] Key 'brand_summary' not found in mapped data.
-2025-08-07 22:57:39,142 [INFO] render_mappings to the variable is success!
-2025-08-07 22:57:39,142 [INFO] render_mappings to the file data/input\Luxury-Stays.json is success!
+2025-08-11 08:50:13,885 [INFO] Config file reading!
+2025-08-11 08:50:13,889 [INFO] config/config.yml: Valid yml data.
+2025-08-11 08:50:13,889 [INFO] Config loaded: input_dir=data/input, output_dir=data/output, mapping_file=data/mappings/mapping.yml, template_file=template/dbt-profile-template.txt, final_dir=data/final_output
+2025-08-11 08:50:13,895 [INFO] config/config.yml: Valid YML data loaded.
+2025-08-11 08:50:14,022 [INFO] data/mappings/mapping.yml: Valid YML data loaded.
+2025-08-11 08:50:14,050 [INFO] template/dbt-profile-template.txt: Template file loaded.
+2025-08-11 08:50:14,071 [INFO] data/input\Backpacker-Connect.json: Valid JSON data loaded.
+2025-08-11 08:50:14,071 [INFO] render_mappings to intermediate file is started!
+2025-08-11 08:50:14,071 [WARNING] Key 'brand_summary' not found in mapped data.
+2025-08-11 08:50:14,072 [INFO] render_mappings to the variable is success!
+2025-08-11 08:50:14,074 [INFO] render_mappings to the file data/input\Backpacker-Connect.json is success!
+2025-08-11 08:50:14,117 [INFO] data\output\Backpacker-Connect_profile.yml: Valid YML data loaded.
+2025-08-11 08:50:14,117 [INFO] Creating the final DBT project!
+2025-08-11 08:50:14,117 [INFO] create_project method calledwith profile_file: data\output\Backpacker-Connect_profile.yml and final_dir: data\final_output
+2025-08-11 08:50:14,120 [INFO] Creating DBT project folder at data\final_output\Backpacker-Connect_profile
+2025-08-11 08:50:14,137 [INFO] DBT project 'Backpacker-Connect_profile' created at C:\Users\HP\Documents\gitrepo2\SNOWPLOW_PROJECT\AUTO-DBT-PROFILE\data\final_output\Backpacker-Connect_profile
+2025-08-11 08:50:14,138 [INFO] Created the final DBT project successfully!
+2025-08-11 08:50:14,141 [INFO] config/config.yml: Valid YML data loaded.
+2025-08-11 08:50:14,145 [INFO] data/mappings/mapping.yml: Valid YML data loaded.
+2025-08-11 08:50:14,145 [INFO] template/dbt-profile-template.txt: Template file loaded.
+2025-08-11 08:50:14,162 [INFO] data/input\LastMinute-Deals.json: Valid JSON data loaded.
+2025-08-11 08:50:14,162 [INFO] render_mappings to intermediate file is started!
+2025-08-11 08:50:14,162 [WARNING] Key 'brand_summary' not found in mapped data.
+2025-08-11 08:50:14,168 [INFO] render_mappings to the variable is success!
+2025-08-11 08:50:14,168 [INFO] render_mappings to the file data/input\LastMinute-Deals.json is success!
+2025-08-11 08:50:14,199 [INFO] data\output\LastMinute-Deals_profile.yml: Valid YML data loaded.
+2025-08-11 08:50:14,199 [INFO] Creating the final DBT project!
+2025-08-11 08:50:14,199 [INFO] create_project method calledwith profile_file: data\output\LastMinute-Deals_profile.yml and final_dir: data\final_output
+2025-08-11 08:50:14,200 [INFO] Creating DBT project folder at data\final_output\LastMinute-Deals_profile
+2025-08-11 08:50:14,210 [INFO] DBT project 'LastMinute-Deals_profile' created at C:\Users\HP\Documents\gitrepo2\SNOWPLOW_PROJECT\AUTO-DBT-PROFILE\data\final_output\LastMinute-Deals_profile
+2025-08-11 08:50:14,210 [INFO] Created the final DBT project successfully!
+2025-08-11 08:50:14,212 [INFO] config/config.yml: Valid YML data loaded.
+2025-08-11 08:50:14,215 [INFO] data/mappings/mapping.yml: Valid YML data loaded.
+2025-08-11 08:50:14,216 [INFO] template/dbt-profile-template.txt: Template file loaded.
+2025-08-11 08:50:14,237 [INFO] data/input\Luxury-Stays.json: Valid JSON data loaded.
+2025-08-11 08:50:14,237 [INFO] render_mappings to intermediate file is started!
+2025-08-11 08:50:14,237 [WARNING] Key 'brand_summary' not found in mapped data.
+2025-08-11 08:50:14,238 [INFO] render_mappings to the variable is success!
+2025-08-11 08:50:14,238 [INFO] render_mappings to the file data/input\Luxury-Stays.json is success!
+2025-08-11 08:50:14,278 [INFO] data\output\Luxury-Stays_profile.yml: Valid YML data loaded.
+2025-08-11 08:50:14,278 [INFO] Creating the final DBT project!
+2025-08-11 08:50:14,278 [INFO] create_project method calledwith profile_file: data\output\Luxury-Stays_profile.yml and final_dir: data\final_output
+2025-08-11 08:50:14,281 [INFO] Creating DBT project folder at data\final_output\Luxury-Stays_profile
+2025-08-11 08:50:14,295 [INFO] DBT project 'Luxury-Stays_profile' created at C:\Users\HP\Documents\gitrepo2\SNOWPLOW_PROJECT\AUTO-DBT-PROFILE\data\final_output\Luxury-Stays_profile
+2025-08-11 08:50:14,295 [INFO] Created the final DBT project successfully!
