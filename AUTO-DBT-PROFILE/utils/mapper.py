@@ -153,7 +153,7 @@ class TemplateProcessor:
 
         logging.info("render_mappings to the variable is success!")
 
-    def create_dbt_profile(self):
+    def create_dbt_profile(self) -> str:
         """
         Rendering the mappings and create a new input
         file with matched string from the mappings
@@ -191,6 +191,7 @@ class TemplateProcessor:
 
         with open(output_file, "w") as file:
             file.write(rendered)
+        return output_file
 
     def _extract_value(self, json_key: str):
         """

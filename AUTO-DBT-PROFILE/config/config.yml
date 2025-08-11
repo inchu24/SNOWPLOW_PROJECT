@@ -3,3 +3,4 @@ output_dir: data/output
 mapping_file: data/mappings/mapping.yml
 template_file: template/dbt-profile-template.txt
 updated_input_dir: data/updated_input
+final_dir: data/final_output
